@@ -108,8 +108,14 @@ header a:hover{
     background:#35424a
 }
 
-#newsletter h1, h4{
+#newsletter h1{
     float:left;
+}
+
+#newsletter h4 {
+    float:left;
+    margin-left:-325px;
+    margin-top:30px;
 }
 
 #newsletter form {
@@ -119,7 +125,7 @@ header a:hover{
 
 #newsletter input[type="email"]{
     padding:4px;
-    height:25px;
+    height:15px;
     width:250px;
 }
 
