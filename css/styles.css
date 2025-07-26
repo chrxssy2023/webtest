@@ -20,7 +20,7 @@ ul{
     padding:0;
 }
 
-.button_1{
+.submit_button{
     height:38px;
     background:#9caf88;
     border:0;
@@ -83,21 +83,21 @@ header a:hover{
     font-weight:bold;
 }
 
-/*showcase */
-#showcase{
+/*welcome */
+#welcome{
     min-height:400px;
     background:url('image.jpg') no-repeat 0 -400px;
     text-align:center;
     color:#ffffff;
 }
 
-#showcase h1{
+#welcome h1{
     margin-top:100px;
     font-size:55px;
     margin-bottom:10px;
 }
 
-#showcase p{
+#welcome p{
     font-size:20px;
 }
 
@@ -108,8 +108,14 @@ header a:hover{
     background:#35424a
 }
 
-#newsletter h1, h4{
+#newsletter h1{
     float:left;
+}
+
+#newsletter h4{
+    float:left;
+    margin-left:-325px;
+    margin-top:30px;
 }
 
 #newsletter form {
@@ -119,23 +125,23 @@ header a:hover{
 
 #newsletter input[type="email"]{
     padding:4px;
-    height:25px;
+    height:15px;
     width:250px;
 }
 
-/* Boxes */
-#boxes{
+/* Homepage Content */
+#homepage_content{
     margin-top:20px;
 }
 
-#boxes .box{
+#homepage_content .box{
     float:left;
     text-align: center;
     width:30%;
     padding:10px;
 }
 
-#boxes .box img{
+#homepage_content .box img{
     width:90px;
 }
 
@@ -182,7 +188,7 @@ footer{
     header nav li,
     #newsletter h1,
     #newsletter form
-    #boxes .box,
+    #homepage_content .box,
     article#main-col,
     aside#sidebar{
         float:none;
@@ -194,7 +200,7 @@ footer{
         padding-bottom:20px;
     }
     
-    #showcase h1{
+    #welcome h1{
         margin-top:40px;
     }
     
