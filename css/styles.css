@@ -137,12 +137,13 @@ header a:hover{
 #homepage_content .box{
     float:left;
     text-align: center;
-    width:30%;
+    width:90%;
     padding:10px;
 }
 
 #homepage_content .box img{
-    width:90px;
+    width:1000px;
+    height:80px;
 }
 
 /* Sidebar */
@@ -164,8 +165,17 @@ article#main-col{
     width:65%;
 }
 
-/* Services */
-ul#services li{
+/* FAQs Questions */
+ul#faqs_questions li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+}
+
+/* Learning Class */
+ul#learning_class li{
     list-style: none;
     padding:20px;
     border: #cccccc solid 1px;
@@ -175,7 +185,7 @@ ul#services li{
 
 footer{
     padding:20px;
-    margin-top:20px;
+    margin-top:1000px;
     color:#ffffff;
     background-color:#9caf88;
     text-align: center;
