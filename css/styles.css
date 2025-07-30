@@ -18,6 +18,7 @@ body{
 ul{
     margin:0;
     padding:0;
+    list-style: none; /* Helps remove default bullet points */
 }
 
 .submit_button{
@@ -125,7 +126,7 @@ header a:hover{
 
 #newsletter input[type="email"]{
     padding:4px;
-    height:15px;
+    height:25px;
     width:250px;
 }
 
@@ -165,6 +166,35 @@ article#main-col{
     width:65%;
 }
 
+/*Notes-col*/
+article#notes-col{
+    float:left;
+    width:65%;
+    padding:20px;
+}
+
+/*Scales-col*/
+article#scales-col{
+    float:left;
+    width:65%;
+    padding:20px;
+}
+
+/*Chords-col*/
+article#chords-col{
+    float:left;
+    width:65%;
+    padding:20px;
+}
+
+/* Text bubble for learning section */
+.learning-bubble{
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+}
+
 /* FAQs Questions */
 ul#faqs_questions li{
     list-style: none;
@@ -185,7 +215,7 @@ ul#learning_class li{
 
 footer{
     padding:20px;
-    margin-top:1000px;
+    margin-top:160px;
     color:#ffffff;
     background-color:#9caf88;
     text-align: center;
