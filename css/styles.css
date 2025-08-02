@@ -38,6 +38,14 @@ ul{
     margin-bottom:10px;
 }
 
+.light{
+    padding:15px;
+    background:#e6e6e6;
+    color:#35424a;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 /* Header */
 header{
     background:#35424a;
@@ -152,7 +160,7 @@ header a:hover{
 aside#sidebar{
     float:right;
     width:30%;
-    margin-top:10px;
+    margin-top:53px;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
@@ -166,33 +174,17 @@ article#main-col{
     width:65%;
 }
 
-/*Notes-col*/
-article#notes-col{
+/*Learning-col*/
+article#learning-col{
     float:left;
     width:65%;
     padding:20px;
 }
 
-/*Scales-col*/
-article#scales-col{
-    float:left;
-    width:65%;
-    padding:20px;
-}
-
-/*Chords-col*/
-article#chords-col{
-    float:left;
-    width:65%;
-    padding:20px;
-}
-
-/* Text bubble for learning section */
-.learning-bubble{
-    padding:20px;
-    border: #cccccc solid 1px;
-    margin-bottom:5px;
-    background:#e6e6e6;
+#piano{
+    margin-top:10px;
+    width:80%;
+    height:100px;
 }
 
 /* FAQs Questions */
@@ -211,6 +203,23 @@ ul#learning_class li{
     border: #cccccc solid 1px;
     margin-bottom:5px;
     background:#e6e6e6;
+}
+
+map#location{
+    margin-top:100px;
+    float:left;
+    width:65%;
+}
+
+#message {
+    display: none;
+    margin: 1em auto;
+    padding: 0.5em;
+    max-width: 400px;
+    color: green;
+    text-align: center;
+    border: 1px solid #cfc;
+    border-radius: 4px;
 }
 
 footer{

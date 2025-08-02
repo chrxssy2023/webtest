@@ -8,6 +8,28 @@
         <meta name="author" content="Christina Chen">
         <title>Pitch Harmony Hub | FAQs</title>
         <link rel="stylesheet" href="../css/styles.css">
+        <script>
+            function showEmailMessage() {
+                event.preventDefault();
+                const email = document.forms['formEmail'].email.value;
+                const msgEl = document.getElementById('message');
+
+                msgEl.textContent = `The email: ${email} has been successfully submitted!`;
+                msgEl.style.display = 'block';
+
+                return false;
+            }
+
+            function showQuoteMessage() {
+                event.preventDefault();
+                const msgEl = document.getElementById('message');
+
+                msgEl.textContent = 'Your question has been submitted!';
+                msgEl.style.display = 'block';
+
+                return false;
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -26,14 +48,15 @@
                 </nav>
             </div>
         </header>
+        <div id="message"></div>
         
         <section id="newsletter">
             <div class="container">
                 <h1>Stay Updated with Music Insights</h1>
                 <br>
                 <h4>Subscribe to our latest music theory lessons, tips, and resources directly to your in inbox!</h4>
-                <form>
-                    <input type="email" placeholder="enter email: ">
+                <form id="formEmail" onsubmit="return showEmailMessage(event)">
+                    <input type="email" name="email" placeholder="enter email: " required>
                     <button type="submit" class="submitbutton">submit</button>
                 </form>
             </div>
@@ -87,10 +110,10 @@
                     <div class="dark">
                         <h3>Unanswered questions?:
                             Answers Beyond the Basics</h3>
-                        <form class="quote">
+                        <form class="quote" id="formQuote" onsubmit="return showQuoteMessage(event)">
                             <div>
                                 <label>Name</label><br>
-                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Name" required>
                             </div>
                             <div>
                                 <label>Email</label><br>
@@ -98,7 +121,7 @@
                             </div>
                             <div>
                                 <label>Questions</label><br>
-                                <textarea placeholder="Questions"></textarea>
+                                <textarea placeholder="Questions" required></textarea>
                             </div>
                             <button class="submit_button" type="submit">Send</button>
                         </form>
