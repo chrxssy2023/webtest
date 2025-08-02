@@ -213,6 +213,12 @@ ul#learning_class li{
     background:#e6e6e6;
 }
 
+map#location{
+    margin-top:100px;
+    float:left;
+    width:65%;
+}
+
 footer{
     padding:20px;
     margin-top:160px;
