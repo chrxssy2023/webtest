@@ -8,6 +8,18 @@
         <meta name="author" content="Christina Chen">
         <title>Pitch Harmony Hub | Learning</title>
         <link rel="stylesheet" href="../css/styles.css">
+        <script>
+            function showEmailMessage() {
+                event.preventDefault();
+                const email = document.forms['formEmail'].email.value;
+                const msgEl = document.getElementById('message');
+
+                msgEl.textContent = `The email: ${email} has been successfully submitted!`;
+                msgEl.style.display = 'block';
+
+                return false;
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -26,14 +38,14 @@
                 </nav>
             </div>
         </header>
-        
+        <div id="message"></div>
         <section id="newsletter">
             <div class="container">
                 <h1>Stay Updated with Music Insights</h1>
                 <br>
                 <h4>Subscribe to our latest music theory lessons, tips, and resources directly to your inbox!</h4>
-                <form>
-                    <input type="email" placeholder="enter email: ">
+                <form id="formEmail" onsubmit="return showEmailMessage(event)">
+                    <input type="email" name="email" placeholder="enter email: " required>
                     <button type="submit" class="submitbutton">submit</button>
                 </form>
             </div>
