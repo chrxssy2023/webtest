@@ -38,6 +38,14 @@ ul{
     margin-bottom:10px;
 }
 
+.light{
+    padding:15px;
+    background:#e6e6e6;
+    color:#35424a;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 /* Header */
 header{
     background:#35424a;
@@ -166,33 +174,17 @@ article#main-col{
     width:65%;
 }
 
-/*Notes-col*/
-article#notes-col{
+/*Learning-col*/
+article#learning-col{
     float:left;
     width:65%;
     padding:20px;
 }
 
-/*Scales-col*/
-article#scales-col{
-    float:left;
-    width:65%;
-    padding:20px;
-}
-
-/*Chords-col*/
-article#chords-col{
-    float:left;
-    width:65%;
-    padding:20px;
-}
-
-/* Text bubble for learning section */
-.learning-bubble{
-    padding:20px;
-    border: #cccccc solid 1px;
-    margin-bottom:5px;
-    background:#e6e6e6;
+#piano{
+    margin-top:10px;
+    width:80%;
+    height:100px;
 }
 
 /* FAQs Questions */
