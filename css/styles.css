@@ -139,7 +139,7 @@ header a:hover{
 }
 
 /* Homepage Content */
-#homepage_content{
+/* #homepage_content{
     margin-top:20px;
 }
 
@@ -153,6 +153,32 @@ header a:hover{
 #homepage_content .box img{
     width:1000px;
     height:80px;
+} */
+
+#homepage_content .home_container {
+  display: flex;
+}
+
+#homepage_content .boxleft,
+#homepage_content .boxright {
+  width: 50%;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;                 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#homepage_content .boxleft p{
+  max-width: 80%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+#homepage_content .boxright img {
+  max-width: 80%;
+  height: auto;
 }
 
 /* Sidebar */
@@ -269,7 +295,7 @@ footer{
     header nav li,
     #newsletter h1,
     #newsletter form
-    #homepage_content .box,
+    /* #homepage_content .box, */
     article#main-col,
     aside#sidebar{
         float:none;
