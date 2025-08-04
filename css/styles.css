@@ -38,6 +38,14 @@ ul{
     margin-bottom:10px;
 }
 
+.light{
+    padding:15px;
+    background:#e6e6e6;
+    color:#35424a;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 /* Header */
 header{
     background:#35424a;
@@ -152,7 +160,7 @@ header a:hover{
 aside#sidebar{
     float:right;
     width:30%;
-    margin-top:10px;
+    margin-top:53px;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
@@ -167,24 +175,30 @@ article#main-col{
 }
 
 /*Notes-col*/
-article#notes-col{
-    float:left;
-    width:65%;
+ul#learning_class li{
+    list-style: none;
     padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
 }
 
 /*Scales-col*/
-article#scales-col{
-    float:left;
-    width:65%;
+ul#learning_class li{
+    list-style: none;
     padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
 }
 
 /*Chords-col*/
-article#chords-col{
-    float:left;
-    width:65%;
+ul#learning_class li{
+    list-style: none;
     padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
 }
 
 /* Text bubble for learning section */
@@ -204,6 +218,18 @@ ul#faqs_questions li{
     background:#e6e6e6;
 }
 
+#message {
+    display: none;
+    margin: 1em auto;
+    padding: 0.5em;
+    max-width: 400px;
+    color: green;
+    text-align: center;
+    border: 1px solid #cfc;
+    border-radius: 4px;
+}
+
+
 /* Learning Class */
 ul#learning_class li{
     list-style: none;
@@ -211,6 +237,18 @@ ul#learning_class li{
     border: #cccccc solid 1px;
     margin-bottom:5px;
     background:#e6e6e6;
+}
+
+map#location{
+    margin-top:100px;
+    float:center;
+    width:65%;
+}
+
+#learning_images{
+    margin-top:10px;
+    width:80%;
+    height:100px;
 }
 
 footer{

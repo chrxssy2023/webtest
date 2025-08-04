@@ -8,6 +8,18 @@
         <meta name="author" content="Christina Chen">
         <title>Pitch Harmony Hub | About</title>
         <link rel="stylesheet" href="../css/styles.css">
+        <script>
+            function showEmailMessage() {
+                event.preventDefault();
+                const email = document.forms['formEmail'].email.value;
+                const msgEl = document.getElementById('message');
+
+                msgEl.textContent = `The email: ${email} has been successfully submitted!`;
+                msgEl.style.display = 'block';
+
+                return false;
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -26,14 +38,15 @@
                 </nav>
             </div>
         </header>
+        <div id="message"></div>
         
         <section id="newsletter">
             <div class="container">
                 <h1>Stay Updated with Music Insights</h1>
                 <br>
                 <h4>Subscribe to our latest music theory lessons, tips, and resources directly to your inbox!</h4>
-                <form>
-                    <input type="email" placeholder="enter email: ">
+                <form id="formEmail" onsubmit="return showEmailMessage(event)">
+                    <input type="email" name="email" placeholder="enter email: " required>
                     <button type="submit" class="submitbutton">submit</button>
                 </form>
             </div>
@@ -61,37 +74,31 @@
                     </div>
                 </aside>
 
+                <map id="location" name="location">
+                    <div id="ourlocation" class="wherelocated">
+                        <h2>Where we are located</h2>
+                        <div style="overflow: hidden; width: 700px; position: relative;">
+                            <iframe title="map"
+                            width="900"
+                            height="300"
+                            src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=53%20Hobson%20Street%2C%20Thorndon+(Queen%20Margaret%20College)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            ></iframe>
+                            <div style="width: 80%; bottom: 10px; left: 0; right: 0; margin-left: auto; margin-right: auto; color: #000; text-align: center;">
+                                <p>
+                                    <i>Acknowledgement: Google Maps
+                                        <br>
+                                        https://maps.google.com
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </map>
             </div>
-        </section>
-        
-        <section>
-              <center>
-        <div id="ourlocation" class="bubblelocation">
-          <h2>Where we are located</h2>
-          <div style="overflow: hidden; width: 700px; position: relative;">
-            <iframe
-              width="900"
-              height="300"
-              src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=53%20Hobson%20Street%2C%20Thorndon+(Queen%20Margaret%20College)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe>
-            <div style="position: absolute; width: 80%; bottom: 10px; left: 0; right: 0; margin-left: auto; margin-right: auto; color: #000; text-align: center;">
-              <small style="line-height: 1.8; font-size: 2px; background: #fff;">Powered by <a href="https://embedgooglemaps.com/">Embed Google Maps</a> & <a href="https://cancelgamstop.com/">cancelgamstop.com</a></small>
-            <p><i>Acknowledgement: Google Maps <br> https://maps.google.com </i></p> 
-            </div>
-            <style>
-              #gmap_canvas img {
-                max-width: none !important;
-                background: none !important;
-              }
-            </style>
-          </div>
-          <br />
-        </div>
-      </center>
         </section>
         
         <footer>
