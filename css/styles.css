@@ -239,16 +239,19 @@ ul#learning_class li{
     background:#e6e6e6;
 }
 
-map#location{
-    margin-top:100px;
-    float:center;
-    width:65%;
+#location {
+  margin: 100px auto 0;
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#learning_images{
+.learning_images{
     margin-top:10px;
     width:80%;
-    height:100px;
+    height:200px;
 }
 
 footer{
