@@ -291,10 +291,11 @@ ul#learning_class li{
   align-items: center;
 }
 
-.learning_images{
-    margin-top:10px;
-    width:80%;
-    height:250px;
+.learning_images {
+  display: block;
+  margin: 10px auto 0;
+  width: 80%;
+  height: 250px;
 }
 
 footer{
