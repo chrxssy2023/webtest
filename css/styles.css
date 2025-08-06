@@ -159,6 +159,22 @@ header a:hover{
   word-break: break-word;
 }
 
+#welcome_container {
+  text-align: center;
+}
+
+#welcome_container h1 {
+  color: #336699;
+}
+
+#welcome_container p {
+  max-width: 80%;
+  white-space: normal;
+  word-break: break-word;
+  margin: 0 auto;
+  color: #336699;
+}
+
 #homepage_content .boxright img {
   max-width: 80%;
   height: auto;
