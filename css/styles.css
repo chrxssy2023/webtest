@@ -140,23 +140,40 @@ header a:hover{
 
 #homepage_content .home_container {
   display: flex;
+  align-items: stretch;
+  margin-bottom: 2em;
 }
 
 #homepage_content .boxleft,
 #homepage_content .boxright {
-  width: 50%;
+  flex: 1;
   padding: 50px;
   box-sizing: border-box;
-  display: flex;                 
-  align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-#homepage_content .boxleft p{
-  max-width: 80%;
+#homepage_content .boxleft .dark {
+  flex: 1;
+}
+
+#homepage_content .boxleft p {
+  max-width: 100%;
   white-space: normal;
   word-break: break-word;
+}
+
+#homepage_content .boxright {
+  align-items: center;
+}
+
+#homepage_content .boxright img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  border: 1px solid #304cea;
+  border-radius: 4px;
 }
 
 #welcome_container {
