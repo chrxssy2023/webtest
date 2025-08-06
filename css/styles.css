@@ -176,12 +176,14 @@ header a:hover{
   border-radius: 4px;
 }
 
-#welcome_container {
-  text-align: center;
+#welcome_box {
+  color: #ffffff;
+  background-color: #3f5062;
+  padding: 40px 0;
 }
 
-#welcome_container h1 {
-  color: #336699;
+#welcome_container {
+  text-align: center;
 }
 
 #welcome_container p {
@@ -189,7 +191,6 @@ header a:hover{
   white-space: normal;
   word-break: break-word;
   margin: 0 auto;
-  color: #336699;
 }
 
 #homepage_content .boxright img {
