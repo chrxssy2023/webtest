@@ -7,12 +7,12 @@ body{
     background-color: lightgrey;
 }
 
-/* Global */
+/* Global (general rule that is applied everywhere, helps keep styling consistent without repeating code)*/
 /*you only use dots for class names. when you have an id you use the number sign*/
 .container{
     width:80%;
-    margin:auto;
-    overflow:hidden;
+    margin:auto; /* Centers the container horizontally */
+    overflow:hidden; /* Used to control the behaviour of content that will overflow the boundaries of the container */
 }
 
 ul{
@@ -62,9 +62,9 @@ header a{
     font-size:16px;
 }
 
-header li{
-    float:left;
-    display:inline;
+header li{ /* For list items in the header */
+    float:left; /* Makes list items float left */
+    display:inline; /* Makes list items showed inlined */
     padding: 0 20px 0 20px;
 }
 
@@ -78,36 +78,18 @@ header #branding h1{
 }
 
 header nav{
-    float:right;
+    float:right; /* Makes the navigation section float right */
     margin-top:10px;
 }
 
-header .highlight, header .current a{
+header .highlight, header .current a{ /* Highlights the current page your on */
     color:#9caf88;
     font-weight:bold;
 }
 
-header a:hover{
+header a:hover{ /* Change the button's colour and makes it bold when your cursor is hovering over it */
     color:#cccccc;
     font-weight:bold;
-}
-
-/*welcome */
-#welcome{
-    min-height:400px;
-    background:url('image.jpg') no-repeat 0 -400px;
-    text-align:center;
-    color:#ffffff;
-}
-
-#welcome h1{
-    margin-top:100px;
-    font-size:55px;
-    margin-bottom:10px;
-}
-
-#welcome p{
-    font-size:20px;
 }
 
 /* Newsletter */
@@ -132,16 +114,16 @@ header a:hover{
     margin-top:15px;
 }
 
-#newsletter input[type="email"]{
+#newsletter input[type="email"]{ /* For email input box */
     padding:4px;
     height:25px;
     width:250px;
 }
 
-#homepage_content .home_container {
-  display: flex;
-  align-items: stretch;
-  margin-bottom: 2em;
+#homepage_content .home_container { /* For homepage content using a flexible layout */
+  display: flex; /* Uses flexbox to arrange the items into a row */
+  align-items: stretch; /* Makes the items stretch to fill and into the avaliable height */
+  margin-bottom: 2em; /* Adds space below the container */
 }
 
 #homepage_content .boxleft,
@@ -171,30 +153,13 @@ header a:hover{
 #homepage_content .boxright img {
   max-width: 95%;
   max-height: 95%;
-  object-fit: contain;
-  border: 1px solid #304cea;
+  object-fit: contain; /* Scales the image to fit while keeping the right shape */
+  border: 1px solid #3f5062;
   border-radius: 4px;
 }
 
-#welcome_box {
-  color: #ffffff;
-  background-color: #3f5062;
-  padding: 40px 0;
-}
-
-#welcome_container {
-  text-align: center;
-}
-
-#welcome_container p {
-  max-width: 80%;
-  white-space: normal;
-  word-break: break-word;
-  margin: 0 auto;
-}
-
 #homepage_content .boxright img {
-  max-width: 80%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -209,6 +174,13 @@ aside#sidebar{
 aside#sidebar .quote input, aside#sidebar .quote textarea{
     width:90%;
     padding:5px;
+}
+
+aside#sidebar img {
+    max-width: 80%;
+    max-height: auto;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /* Main-col */
@@ -261,25 +233,16 @@ ul#faqs_questions li{
     background:#e6e6e6;
 }
 
+/* For message displays */
 #message {
     display: none;
-    margin: 1em auto;
+    margin: 1em auto; /* Centers horizontally */
     padding: 0.5em;
     max-width: 400px;
     color: #9caf88;
     text-align: center;
     border: 1px solid #9caf88;
     border-radius: 4px;
-}
-
-
-/* Learning Class */
-ul#learning_class li{
-    list-style: none;
-    padding:20px;
-    border: #cccccc solid 1px;
-    margin-bottom:5px;
-    background:#e6e6e6;
 }
 
 #location {
@@ -307,7 +270,9 @@ footer{
 }
 
 /* Media Queries */
-@media(max-width: 768px){
+@media(max-width: 768px){ /* @media is a rule that applies styles based on the device features
+                           * changing the viewpoint, such as its width, height, allowing it to adapt
+                           * to different screen sizes */
     header #branding,
     header nav,
     header nav li,
@@ -316,7 +281,7 @@ footer{
     /* #homepage_content .box, */
     article#main-col,
     aside#sidebar{
-        float:none;
+        float:none; /* Remove floats for smaller screens such as phones */
         text-align: center;
         width:100%;
     }
@@ -330,7 +295,7 @@ footer{
     }
     
     #newsletter button, .quote button{
-        display:block;
+        display:block; /* Makes the buttons stack vertically */
         width:100%;
     }
     
@@ -338,22 +303,4 @@ footer{
         width:100%;
         margin-bottom:5px;
     }
-}
-
-/*showcase */
-#showcase{
-    min-height:300px;
-    background:url('https://pixabay.com/photos/piano-music-keys-keyboard-9271509/') no-repeat 0 -400px;
-    text-align:center;
-    color:#9caf88;
-}
-
-#showcase h1{
-    margin-top:100px;
-    font-size:55px;
-    margin-bottom:10px;
-}
-
-#showcase p{
-    font-size:20px;
 }
